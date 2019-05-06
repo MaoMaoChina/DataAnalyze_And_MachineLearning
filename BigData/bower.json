@@ -1,0 +1,23 @@
+{
+  "name": "Bigdata",
+  "authors": [
+    "maomaoL <13102215515@163.com>"
+  ],
+  "description": "a project about BigData",
+  "main": "index.html",
+  "keywords": [
+    "499595lzl"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "admin-lte": "^2.4.10"
+  }
+}
