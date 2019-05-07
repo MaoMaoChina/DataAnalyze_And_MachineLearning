@@ -7,28 +7,28 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/Ionicons/css/ionicons.min.css">
   <!-- daterange picker -->
-  <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="../Library/bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap datepicker -->
-  <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- iCheck for checkboxes and radio inputs -->
-  <link rel="stylesheet" href="../bower_components/admin-lte/plugins/iCheck/all.css">
+  <link rel="stylesheet" href="../Library/plugins/iCheck/all.css">
   <!-- Bootstrap Color Picker -->
-  <link rel="stylesheet" href="../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
   <!-- Bootstrap time Picker -->
-  <link rel="stylesheet" href="../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="../Library/plugins/timepicker/bootstrap-timepicker.min.css">
   <!-- Select2 -->
-  <link rel="stylesheet" href="../bower_components/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../Library/bower_components/select2/dist/css/select2.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../bower_components/admin-lte/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../Library/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../bower_components/admin-lte/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../Library/dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -467,88 +467,88 @@
     <!-- Main content -->
     <section class="content">
 
-      <!-- SELECT2 EXAMPLE -->
-      <!--<div class="box box-default">-->
-        <!--<div class="box-header with-border">-->
-          <!--<h3 class="box-title">Select2</h3>-->
+       <!--SELECT2 EXAMPLE -->
+      <div class="box box-default">
+        <div class="box-header with-border">
+          <h3 class="box-title">Select2</h3>
 
-          <!--<div class="box-tools pull-right">-->
-            <!--<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>-->
-            <!--<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>-->
-          <!--</div>-->
-        <!--</div>-->
-        <!--&lt;!&ndash; /.box-header &ndash;&gt;-->
-        <!--<div class="box-body">-->
-          <!--<div class="row">-->
-            <!--<div class="col-md-6">-->
-              <!--<div class="form-group">-->
-                <!--<label>Minimal</label>-->
-                <!--<select class="form-control select2" style="width: 100%;">-->
-                  <!--<option selected="selected">Alabama</option>-->
-                  <!--<option>Alaska</option>-->
-                  <!--<option>California</option>-->
-                  <!--<option>Delaware</option>-->
-                  <!--<option>Tennessee</option>-->
-                  <!--<option>Texas</option>-->
-                  <!--<option>Washington</option>-->
-                <!--</select>-->
-              <!--</div>-->
-              <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
-              <!--<div class="form-group">-->
-                <!--<label>Disabled</label>-->
-                <!--<select class="form-control select2" disabled="disabled" style="width: 100%;">-->
-                  <!--<option selected="selected">Alabama</option>-->
-                  <!--<option>Alaska</option>-->
-                  <!--<option>California</option>-->
-                  <!--<option>Delaware</option>-->
-                  <!--<option>Tennessee</option>-->
-                  <!--<option>Texas</option>-->
-                  <!--<option>Washington</option>-->
-                <!--</select>-->
-              <!--</div>-->
-              <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
-            <!--</div>-->
-            <!--&lt;!&ndash; /.col &ndash;&gt;-->
-            <!--<div class="col-md-6">-->
-              <!--<div class="form-group">-->
-                <!--<label>Multiple</label>-->
-                <!--<select class="form-control select2" multiple="multiple" data-placeholder="Select a State"-->
-                        <!--style="width: 100%;">-->
-                  <!--<option>Alabama</option>-->
-                  <!--<option>Alaska</option>-->
-                  <!--<option>California</option>-->
-                  <!--<option>Delaware</option>-->
-                  <!--<option>Tennessee</option>-->
-                  <!--<option>Texas</option>-->
-                  <!--<option>Washington</option>-->
-                <!--</select>-->
-              <!--</div>-->
-              <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
-              <!--<div class="form-group">-->
-                <!--<label>Disabled Result</label>-->
-                <!--<select class="form-control select2" style="width: 100%;">-->
-                  <!--<option selected="selected">Alabama</option>-->
-                  <!--<option>Alaska</option>-->
-                  <!--<option disabled="disabled">California (disabled)</option>-->
-                  <!--<option>Delaware</option>-->
-                  <!--<option>Tennessee</option>-->
-                  <!--<option>Texas</option>-->
-                  <!--<option>Washington</option>-->
-                <!--</select>-->
-              <!--</div>-->
-              <!--&lt;!&ndash; /.form-group &ndash;&gt;-->
-            <!--</div>-->
-            <!--&lt;!&ndash; /.col &ndash;&gt;-->
-          <!--</div>-->
-          <!--&lt;!&ndash; /.row &ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash; /.box-body &ndash;&gt;-->
-        <!--<div class="box-footer">-->
-          <!--Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about-->
-          <!--the plugin.-->
-        <!--</div>-->
-      <!--</div>-->
-      <!-- /.box -->
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Minimal</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Alabama</option>
+                  <option>Alaska</option>
+                  <option>California</option>
+                  <option>Delaware</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Washington</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label>Disabled</label>
+                <select class="form-control select2" disabled="disabled" style="width: 100%;">
+                  <option selected="selected">Alabama</option>
+                  <option>Alaska</option>
+                  <option>California</option>
+                  <option>Delaware</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Washington</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Multiple</label>
+                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"
+                        style="width: 100%;">
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>California</option>
+                  <option>Delaware</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Washington</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+              <div class="form-group">
+                <label>Disabled Result</label>
+                <select class="form-control select2" style="width: 100%;">
+                  <option selected="selected">Alabama</option>
+                  <option>Alaska</option>
+                  <option disabled="disabled">California (disabled)</option>
+                  <option>Delaware</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Washington</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
+          the plugin.
+        </div>
+      </div>
+       /.box
 
       <div class="row">
         <div class="col-md-6">
@@ -876,34 +876,34 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../Library/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../Library/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Select2 -->
-<script src="../bower_components/select2/dist/js/select2.full.min.js"></script>
+<script src="../Library/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<script src="../bower_components/admin-lte/plugins/input-mask/jquery.inputmask.js"></script>
-<script src="../bower_components/admin-lte/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="../bower_components/admin-lte/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script src="../Library/plugins/input-mask/jquery.inputmask.js"></script>
+<script src="../Library/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="../Library/plugins/input-mask/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
-<script src="../bower_components/moment/min/moment.min.js"></script>
-<script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../Library/bower_components/moment/min/moment.min.js"></script>
+<script src="../Library/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
-<script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="../Library/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap color picker -->
-<script src="../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+<script src="../Library/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+<script src="../Library/plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- SlimScroll -->
-<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../Library/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="../bower_components/admin-lte/plugins/iCheck/icheck.min.js"></script>
+<script src="../Library/plugins/iCheck/icheck.min.js"></script>
 <!-- FastClick -->
-<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../Library/bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+<script src="../Library/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../bower_components/admin-lte/dist/js/demo.js"></script>
+<script src="../Library/dist/js/demo.js"></script>
 <!-- Page script -->
 <script>
   $(function () {
