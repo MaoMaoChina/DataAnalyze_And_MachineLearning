@@ -15,14 +15,14 @@ BODY {
   font-size: 7em;
 }
 
-#Black {
+.Black {
   display: inline-block;
   position: relative;
   text-transform: uppercase;  /*大写*/
   font-family: Scratch;
   color: rgb(22,22,22);
 }
-#Black:before {
+.Black:before {
   content: attr(data-text);
   position: absolute;
   width: 100%;
@@ -32,14 +32,14 @@ BODY {
 
 /*深红色的   crimson*/
 /*palevioletred 浅紫红；苍紫罗蓝色*/
-#Friday {
+.Friday {
   display: inline-block;
   position: relative;
   text-transform: uppercase;  /*大写*/
   font-family: Scratch;
   color: palevioletred;
 }
-#Friday:before {
+.Friday:before {
   content: attr(data-text);
   position: absolute;
   width: 100%;

@@ -14,12 +14,18 @@
 </head>
 <body style="text-align: center;">
 <div id="Font">
-<h1 id="Black"   data-text="Black"  >Black</h1>
-<h1 id="Friday"   data-text="Friday" >Friday</h1>
+    <h1 class ="Black en"   data-text="Black"  >Black</h1>
+    <h1 class ="Black zh"   data-text="黑色"    >黑色</h1>
+    <h1 class ="Black fr"   data-text="Noir"  >Noir</h1>
+    <h1 class="Friday en"   data-text="Friday" >Friday</h1>
+    <h1 class="Friday zh"   data-text="星期五" >星期五</h1>
+    <h1 class="Friday fr"   data-text="Vendredi" >Vendredi</h1>
 </div>
 <div class="wrapper" id="Button">
     <a class="cta" href="Analyse/Search.html">
-        <span>Enter</span>
+        <span class="en ">Enter</span>
+        <span class="zh">进入</span>
+        <span class="fr">Entrer</span>
         <span>
       <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -32,4 +38,38 @@
     </a>
 </div>
 </body>
+
+<script>
+    var languagetype = !!navigator.languages?navigator.languages[0]:navigator.language;
+    var lang = languagetype.substr(0,2);
+    zh = document.getElementsByClassName("zh");
+    en = document.getElementsByClassName("en");
+    fr = document.getElementsByClassName("fr");
+    switch(lang){
+        case "zh":
+            for (var i = 0; i<zh.length;i++) {
+                en[i].style.display="none";
+            }
+            for (var i = 0; i<zh.length;i++) {
+                fr[i].style.display="none";
+            }
+            break;
+        case "fr":
+            for (var i = 0; i<zh.length;i++) {
+                en[i].style.display="none";
+            }
+            for (var i = 0; i<zh.length;i++) {
+                zh[i].style.display="none";
+            }
+            break;
+        case "en":
+            for (var i = 0; i<zh.length;i++) {
+                zh[i].style.display="none";
+            }
+            for (var i = 0; i<zh.length;i++) {
+                fr[i].style.display="none";
+            }
+            break;
+    }
+</script>
 </html>
