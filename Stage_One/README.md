@@ -4,7 +4,7 @@ Task|Assignment|Time
 Front-end stylesheet design|Zhelin Liang|5.6- 5.19
 Data analysis/statistics and visualization.|Xinzhi  Huo|5.6- 5.19
 Machine Learning-Data:<br><br><br>| Li Ma with <br>Xinzhi Huo| 5.6-6.10
-Machine Learning-Model<br>(|Yuxuan He with <br>Zhelin Liang|5.6-6.10
+Machine Learning-Model<br>|Yuxuan He with <br>Zhelin Liang|5.6-6.10
   
 ## which also means
 Task|Assignment|Time
