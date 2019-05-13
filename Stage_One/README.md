@@ -12,4 +12,4 @@ Task|Assignment|Time
 Statistics & Analysis|Xinzhi Huo|5.6- 5.19
 Regression & classification|Yuxuan He|5.19- 5.30
 Clustering|Li Ma|5.19- 5.30
-Visualization|Zhelin Liang|5.31-6.10
+Visualization<br>(1) Front-end stylesheet design<br>(2)Use Bar-chart & Donut-chart to visualize some interesting data in the analyze module<br>(3) Show the prediction result by reading combination data that users input |Zhelin Liang|5.31-6.10
