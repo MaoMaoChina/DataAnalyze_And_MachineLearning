@@ -11,6 +11,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import silhouette_score
 from sklearn.cluster import KMeans
+from yellowbrick.cluster import SilhouetteVisualizer
 
 bf = pd.read_csv('E:\FranchProject\BlackFriday.csv')#数据导入
 bf.fillna(0,inplace=True)  #空值填充为0
@@ -45,16 +46,25 @@ k_values = np.arange(1, 11)
 models = []
 dists = []
 for k in k_values:
-    model = KMeans(k).fit(train_scaled)
-    models.append(model)
-    dists.append(model.inertia_)
+    model=KMeans(k)
+    visualizer = SilhouetteVisualizer(model)
+    visualizer.fit(train_scaled) # Fit the training data to the visualizer
+    visualizer.poof() # Draw/show/poof the data
+    model=model.fit(train_scaled)
+    print(model.labels_)
+    print(model.cluster_centers_)
+    #model = KMeans(k).fit(train_scaled)
+    #models.append(model)
+    #dists.append(model.inertia_)
 
+"""
 plt.figure(figsize=(9, 6))
 plt.plot(k_values, dists, '*-')
 plt.ylabel('Sum of squared distances', size=13)
 plt.xlabel('K', size=13)
 plt.xticks(k_values)
 plt.show()
+"""
 
 for k in k_values:
     model = models[k]
