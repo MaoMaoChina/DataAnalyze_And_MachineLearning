@@ -386,7 +386,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="GenderPurchase.html"><i class="fa fa-circle-o"></i>Gender Purchase</a></li>
+                        <li><a href="Purchase.html"><i class="fa fa-circle-o"></i>Gender Purchase</a></li>
                         <li class="active"><a href="#"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
@@ -398,8 +398,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../Age/AgePurchase.html"><i class="fa fa-circle-o"></i>Age Purchase</a></li>
-                        <li><a href="../Age/AgeCategory.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                        <li><a href="../Age/Purchase.html"><i class="fa fa-circle-o"></i>Age Purchase</a></li>
+                        <li><a href="../Age/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                         <!--<li><a href="#"><i class="fa fa-circle-o"></i>ready to develop</a></li>-->
                     </ul>
                 </li>
@@ -411,8 +411,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> ready to develop </a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> ready to develop </a></li>
+                        <li><a href="../Occupation/Purchase.html"><i class="fa fa-circle-o"></i>Occupation Purchase</a></li>
+                        <li><a href="../Occupation/Purchase.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
                 <!--<li>-->
@@ -568,98 +568,314 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <div id="CategoryPreferBar" style="height: 500px;"></div>
+                            <div id="CategoryPreferPie" style="height: 500px;"></div>
                             <script type="text/javascript">
                                 // 基于准备好的dom，初始化echarts实例
-                                var myChart = echarts.init(document.getElementById('CategoryPreferBar'));
+                                var myChart = echarts.init(document.getElementById('CategoryPreferPie'));
+                                var colors = ['#FFAE57', '#FF7853', '#EA5151', '#CC3F57', '#9A2555'];
+                                var bgColor = '#2c343c';
 
-                                // 指定图表的配置项和数据
-                                var option = {
-                                    backgroundColor: '#2c343c',
-                                    title: {
-                                        text: 'Top 10 sales (Product)',
-                                        textStyle: {                 //---主标题内容样式
-                                            color: '#ccc'
-                                        },
-                                        padding:[0,0,100,20]
+                                var itemStyle = {
+                                    star5: {
+                                        color: colors[0]
                                     },
-                                    tooltip : {},
-                                    axisTick:{
-                                        lineStyle:{
-                                            color:'#ccc'          //---默认取轴线的颜色
-                                        }
+                                    star4: {
+                                        color: colors[1]
                                     },
-                                    axisLabel:{                 //---坐标轴 标签
-                                        color:'#ccc'            //---默认取轴线的颜色
+                                    star3: {
+                                        color: colors[2]
                                     },
-                                    legend: {
-                                        data:['Money', 'Pareto index'],
-                                        textStyle:{                 //----图例内容样式
-                                            color:'#ccc'               //---所有图例的字体颜色
-                                        }
-                                    },
-                                    xAxis: {
-                                        name: '      Product ID',
-                                        data: ["0254","1107","2558","1849","0594","1121","1109","2375","0576","0107"],
-                                        nameTextStyle:{             //---坐标轴名称样式
-                                            color:"#ccc"
-                                        },
-                                        axisLine: {
-                                            lineStyle: {
-                                                color: '#ccc'
-                                            }
-                                        }
-                                    },
-                                    yAxis: [{
-                                        name: "Money",
-                                        type:'value',
-                                        nameTextStyle:{             //---坐标轴名称样式
-                                            color:"#ccc"
-                                        },
-                                        axisLine: {
-                                            lineStyle: {
-                                                color: '#ccc'
-                                            }
-                                        },
-                                        axisLabel: {
-                                            formatter: '{value} mi'
-                                        }
-                                    },
-                                        {
-                                            axisLabel: {
-                                                formatter: '%{value}'
-                                            },
-                                            type: 'value',
-                                            scale: true,
-                                            name: 'Pareto index',
-                                            max: 6.0,
-                                            min: 0.0,
-                                            boundaryGap: [0.2, 0.2],
-                                            axisLine: {
-                                                lineStyle: {
-                                                    color: '#ccc'
-                                                }
-                                            }
-                                        }
-                                        ],
-                                    series: [{
-                                        name: 'Money',
-                                        type: 'bar',
-                                        data: [27532426, 26382569, 24652442, 24060871, 23948299, 23882624,23232538,23096487,22493690,21865042],
-                                        lineStyle:{
-                                            color:'#ccc'
-                                        }
-                                        },
-                                        {
-                                            name:'Pareto index',
-                                            type:'line',
-                                            yAxisIndex:1,
-                                            data:[0.549,1.075,1.566,2.045,2.523,2.999,3.462,3.922,4.370,4.806]
-                                        }
-                                    ]
+                                    star2: {
+                                        color: colors[3]
+                                    }
                                 };
 
-                                // 使用刚指定的配置项和数据显示图表。
+                                var data = [{
+                                    name: 'Woman',
+                                    itemStyle: {
+                                        normal: {
+                                            color: colors[1]
+                                        }
+                                    },
+                                    children: [{
+                                        name: 'CG: 1',
+                                        children: [{
+                                            name: '1108',
+                                            children: [{
+                                                name: '5933348'
+                                            }]
+                                        }, {
+                                            name: '0254',
+                                            children: [{
+                                                name: '5763542'
+                                            }]
+                                        }, {
+                                            name: '1107',
+                                            children: [{
+                                                name: '5632357'
+                                            }]
+                                        }, {
+                                            name: '1109',
+                                            children:[{
+                                                name:'5066142'
+                                            }]
+                                        },
+                                            {
+                                                name: '1121',
+                                                children:[{
+                                                    name:'4901047'
+                                                }]
+                                            },
+                                            {
+                                                name: '1849',
+                                                children:[{
+                                                    name:'4723224'
+                                                }]
+                                            }
+                                        ]
+                                    }, {
+                                        name: 'CG: 6',
+                                        children: [{
+                                            name: '0594',
+                                            children: [{
+                                                name: '6007826'
+                                            }]
+                                        }, {
+                                            name: '1486',
+                                            children: [{
+                                                name: '5049905'
+                                            }]
+                                        }, {
+                                            name: '0288',
+                                            children: [{
+                                                name: '4867128'
+                                            }]
+                                        }]
+                                    },
+                                        {
+                                            name: 'CG: 16',
+                                            children: [{
+                                                name: '2558',
+                                                children: [{
+                                                    name: '6690088'
+                                                }]
+                                            }
+                                            ]
+                                        }
+                                    ]
+                                }, {
+                                    name: 'Man',
+                                    itemStyle: {
+                                        color: colors[2]
+                                    },
+                                    children: [{
+                                        name: 'CG: 1',
+                                        children: [{
+                                            name: '0254',
+                                            children: [{
+                                                name: '21768902'
+                                            }]
+                                        }, {
+                                            name: '1107',
+                                            children: [{
+                                                name: '20750212'
+                                            }]
+                                        }, {
+                                            name: '1849',
+                                            children: [{
+                                                name: '19337647'
+                                            }]
+                                        },
+                                            {
+                                                name: '1121',
+                                                children: [{
+                                                    name: '18981577'
+                                                }]
+                                            },
+                                            {
+                                                name: '0576',
+                                                children: [{
+                                                    name: '18720360'
+                                                }]
+                                            },
+                                            {
+                                                name: '2375',
+                                                children: [{
+                                                    name: '18562039'
+                                                }]
+                                            },
+                                            {
+                                                name: '1109',
+                                                children: [{
+                                                    name: '18166396'
+                                                }]
+                                            },
+                                            {
+                                                name: '0107',
+                                                children: [{
+                                                    name: '17517618'
+                                                }]
+                                            }]
+                                    }, {
+                                        name: 'CG: 6',
+                                        children: [{
+                                            name: '0594',
+                                            children: [{
+                                                name: '17940473'
+                                            }]
+                                        }]
+                                    }, {
+                                        name: 'CG: 16',
+                                        children: [{
+                                            name: '2558',
+                                            children: [{
+                                                name: '17962354'
+                                            }]
+                                        }]
+                                    }]
+                                }];
+
+                                for (var j = 0; j < data.length; ++j) {
+                                    var level1 = data[j].children;
+                                    for (var i = 0; i < level1.length; ++i) {
+                                        var block = level1[i].children;
+                                        var bookScore = [];
+                                        var bookScoreId;
+                                        for (var star = 0; star < block.length; ++star) {
+                                            var number = star%4;
+                                            var style = (function (name) {
+                                                switch (number) {
+                                                    case 0:
+                                                        bookScoreId = 0;
+                                                        return itemStyle.star5;
+                                                    case 1:
+                                                        bookScoreId = 1;
+                                                        return itemStyle.star4;
+                                                    case 2:
+                                                        bookScoreId = 2;
+                                                        return itemStyle.star3;
+                                                    case 3:
+                                                        bookScoreId = 3;
+                                                        return itemStyle.star2;
+                                                }
+                                            })(block[star].name);
+
+                                            block[star].label = {
+                                                color: style.color,
+                                                downplay: {
+                                                    opacity: 0.5
+                                                }
+                                            };
+                                            // if has content in this star
+                                            if (block[star].children) {
+                                                style = {
+                                                    opacity: 1,
+                                                    color: style.color
+                                                };
+                                                block[star].children.forEach(function (book) {
+                                                    book.value = 1;
+                                                    book.itemStyle = style;
+
+                                                    book.label = {
+                                                        color: style.color
+                                                    };
+
+                                                    var value = 1;
+                                                    if (bookScoreId === 0 || bookScoreId === 3) {
+                                                        value = 5;
+                                                    }
+
+                                                    if (bookScore[bookScoreId]) {
+                                                        bookScore[bookScoreId].value += value;
+                                                    }
+                                                    else {
+                                                        bookScore[bookScoreId] = {
+                                                            color: colors[bookScoreId],
+                                                            value: value
+                                                        };
+                                                    }
+                                                });
+                                            }
+                                        }
+
+                                        level1[i].itemStyle = {
+                                            color: data[j].itemStyle.color
+                                        };
+                                    }
+                                }
+
+                                option = {
+                                    backgroundColor: bgColor,
+                                    color: colors,
+                                    series: [{
+                                        type: 'sunburst',
+                                        // location of pie
+                                        center: ['50%', '48%'],
+                                        data: data,
+                                        sort: function (a, b) {
+                                            if (a.depth === 1) {
+                                                return b.getValue() - a.getValue();
+                                            }
+                                            else {
+                                                return a.dataIndex - b.dataIndex;
+                                            }
+                                        },
+                                        // style of font
+                                        label: {
+                                            rotate: 'radial',
+                                            color: bgColor
+                                        },
+                                        // style of line
+                                        itemStyle: {
+                                            borderColor: bgColor,
+                                            borderWidth: 2
+                                        },
+
+                                        levels: [{}, {
+                                            r0: 0,
+                                            r: 40,
+                                            label: {
+                                                rotate: 0
+                                            }
+                                        },
+                                            {
+                                                r0: 40,
+                                                r: 105
+                                            },
+                                            {
+                                                r0: 115,
+                                                r: 140,
+                                                itemStyle: {
+                                                    shadowBlur: 2,
+                                                    shadowColor: colors[2],
+                                                    color: 'transparent'
+                                                },
+                                                label: {
+                                                    rotate: 'tangential',
+                                                    fontSize: 10,
+                                                    color: colors[0]
+                                                }
+                                            }, {
+                                                r0: 140,
+                                                r: 145,
+                                                itemStyle: {
+                                                    shadowBlur: 80,
+                                                    shadowColor: colors[0]
+                                                },
+                                                label: {
+                                                    position: 'outside',
+                                                    textShadowBlur: 5,
+                                                    textShadowColor: '#333',
+                                                },
+                                                downplay: {
+                                                    label: {
+                                                        opacity: 0.5
+                                                    }
+                                                }
+                                            }]
+                                    }]
+                                };
+
                                 myChart.setOption(option);
                             </script>
                         </div>
@@ -668,100 +884,6 @@
                     <!-- /.box -->
 
                     <!-- Area chart -->
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <i class="fa fa-bar-chart-o"></i>
-
-                            <h3 class="box-title">Consume Width Area Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div id="product_categori" style="height: 500px;">
-                                <script>
-                                    var myChart = echarts.init(document.getElementById('product_categori'));
-                                    option = {
-                                        backgroundColor: '#2c343c',
-
-                                        title: {
-                                            text: 'Top 5 sales (Category)',
-                                            left: 'center',
-                                            top: 20,
-                                            textStyle: {
-                                                color: '#ccc'
-                                            }
-                                        },
-
-                                        tooltip : {
-                                            trigger: 'item',
-                                            formatter: "{a} <br/>{b} : {c} ({d}%)"
-                                        },
-
-                                        visualMap: {
-                                            show: false,
-                                            min: 200000000,
-                                            max: 3000000000,
-                                            inRange: {
-                                                colorLightness: [0, 1]
-                                            }
-                                        },
-                                        series : [
-                                            {
-                                                name:'Category',
-                                                type:'pie',
-                                                radius : '55%',
-                                                center: ['50%', '50%'],
-                                                data:[
-                                                    {value:1882666325, name:'1'},
-                                                    {value:926917497, name:'5'},
-                                                    {value:840693394, name:'8'},
-                                                    {value:319355286, name:'6'},
-                                                    {value:264497242, name:'2'}
-                                                ].sort(function (a, b) { return a.value - b.value; }),
-                                                roseType: 'radius',
-                                                label: {
-                                                    normal: {
-                                                        textStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        }
-                                                    }
-                                                },
-                                                labelLine: {
-                                                    normal: {
-                                                        lineStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        },
-                                                        smooth: 0.2,
-                                                        length: 10,
-                                                        length2: 20
-                                                    }
-                                                },
-                                                itemStyle: {
-                                                    normal: {
-                                                        color: '#c23531',
-                                                        shadowBlur: 200,
-                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                                    }
-                                                },
-
-                                                animationType: 'scale',
-                                                animationEasing: 'elasticOut',
-                                                animationDelay: function (idx) {
-                                                    return Math.random() * 200;
-                                                }
-                                            }
-                                        ]
-                                    };
-                                    myChart.setOption(option);
-                                </script>
-                            </div>
-                        </div>
-                        <!-- /.box-body-->
-                    </div>
                     <!-- /.box -->
 
                 </div>

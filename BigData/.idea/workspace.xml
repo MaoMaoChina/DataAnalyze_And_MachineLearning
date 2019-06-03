@@ -14,95 +14,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="Purchase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analyse/Age/Purchase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgePurchase.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analyse/Age/AgePurchase.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="338" column="56" lean-forward="false" selection-start-line="338" selection-start-column="56" selection-end-line="338" selection-end-column="56" />
+            <state relative-caret-position="755">
+              <caret line="415" column="120" lean-forward="false" selection-start-line="415" selection-start-column="120" selection-end-line="415" selection-end-column="120" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1558691173915" expanded="true" signature="51575:51653" ph="..." />
+                <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1559573349376" expanded="true" signature="52804:52882" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgeCategory.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analyse/Age/AgeCategory.html">
+      <file leaf-file-name="Category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analyse/Occupation/Category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="338" column="67" lean-forward="false" selection-start-line="338" selection-start-column="67" selection-end-line="338" selection-end-column="67" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1558691063434" expanded="true" signature="46680:46758" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenderPurchase.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analyse/Gender/GenderPurchase.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="336" column="46" lean-forward="false" selection-start-line="336" selection-start-column="46" selection-end-line="336" selection-end-column="46" />
+            <state relative-caret-position="500">
+              <caret line="379" column="35" lean-forward="false" selection-start-line="379" selection-start-column="35" selection-end-line="379" selection-end-column="35" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1558691204505" expanded="true" signature="51065:51143" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenderCategory.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analyse/Gender/GenderCategory.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="337" column="57" lean-forward="false" selection-start-line="337" selection-start-column="57" selection-end-line="337" selection-end-column="57" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1558691173909" expanded="true" signature="54039:54117" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Analyse/Product/Product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="378" column="21" lean-forward="true" selection-start-line="378" selection-start-column="21" selection-end-line="378" selection-end-column="21" />
-              <folding>
-                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1558691063422" expanded="true" signature="54031:54109" ph="..." />
+                <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1559573396591" expanded="true" signature="55903:55981" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.html">
+      <file leaf-file-name="Category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analyse/Age/Category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="534">
+              <caret line="414" column="24" lean-forward="true" selection-start-line="414" selection-start-column="24" selection-end-line="415" selection-end-column="120" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1559573349385" expanded="true" signature="46715:46793" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Purchase.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Analyse/Occupation/Purchase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="707" column="72" lean-forward="false" selection-start-line="707" selection-start-column="72" selection-end-line="707" selection-end-column="72" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1559576656944" expanded="true" signature="48992:49070" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Purchase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analyse/Gender/Purchase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="395" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1045" selection-end-column="0" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1559573368491" expanded="true" signature="52376:52454" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analyse/Gender/Category.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="414" column="120" lean-forward="false" selection-start-line="414" selection-start-column="120" selection-end-line="414" selection-end-column="120" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1559573349391" expanded="true" signature="60343:60421" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,11 +152,18 @@
         <option value="$PROJECT_DIR$/Analyse/Gender.html" />
         <option value="$PROJECT_DIR$/Analyse/Gender/GenderP.html" />
         <option value="$PROJECT_DIR$/Analyse/Gender/GenderCategori.html" />
-        <option value="$PROJECT_DIR$/Analyse/Product/Product.html" />
         <option value="$PROJECT_DIR$/Analyse/Age/AgeCategory.html" />
-        <option value="$PROJECT_DIR$/Analyse/Age/AgePurchase.html" />
-        <option value="$PROJECT_DIR$/Analyse/Gender/GenderCategory.html" />
         <option value="$PROJECT_DIR$/Analyse/Gender/GenderPurchase.html" />
+        <option value="$PROJECT_DIR$/Analyse/Product/Product.html" />
+        <option value="$PROJECT_DIR$/Analyse/Product/Category.html" />
+        <option value="$PROJECT_DIR$/Analyse/Gender/GenderCategory.html" />
+        <option value="$PROJECT_DIR$/Analyse/Age/AgePurchase.html" />
+        <option value="$PROJECT_DIR$/Analyse/Age/Category.html" />
+        <option value="$PROJECT_DIR$/Analyse/Age/Purchase.html" />
+        <option value="$PROJECT_DIR$/Analyse/Gender/Category.html" />
+        <option value="$PROJECT_DIR$/Analyse/Gender/Purchase.html" />
+        <option value="$PROJECT_DIR$/Analyse/Occupation/Category.html" />
+        <option value="$PROJECT_DIR$/Analyse/Occupation/Purchase.html" />
       </list>
     </option>
   </component>
@@ -218,7 +223,7 @@
               <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
               <item name="BigData" type="462c0819:PsiDirectoryNode" />
               <item name="Analyse" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
+              <item name="Occupation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,6 +268,14 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.GenderPurchase.html">
+    <configuration name="Purchase.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BigData/Analyse/Gender/Purchase.html" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.GenderPurchase.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -283,12 +296,12 @@
       <workItem from="1558351909097" duration="1213000" />
       <workItem from="1558684027829" duration="4246000" />
       <workItem from="1559121313985" duration="20000" />
-      <workItem from="1559561960998" duration="11000" />
+      <workItem from="1559561960998" duration="7217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56064000" />
+    <option name="totallyTimeSpent" value="63270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -302,7 +315,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -337,33 +350,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Search2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="302" column="13" lean-forward="true" selection-start-line="302" selection-start-column="13" selection-end-line="302" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Analyse/Search2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -634,6 +626,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Analyse/Product/Product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1892">
+          <caret line="668" column="39" lean-forward="true" selection-start-line="668" selection-start-column="39" selection-end-line="668" selection-end-column="39" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559573234323" expanded="true" signature="48475:48553" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analyse/Product/Category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="711" column="51" lean-forward="true" selection-start-line="711" selection-start-column="51" selection-end-line="711" selection-end-column="51" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559573234316" expanded="true" signature="50327:50405" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -642,65 +660,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Age/AgeCategory.html">
+    <entry file="file://$PROJECT_DIR$/Analyse/Age/Category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="338" column="67" lean-forward="false" selection-start-line="338" selection-start-column="67" selection-end-line="338" selection-end-column="67" />
+        <state relative-caret-position="534">
+          <caret line="414" column="24" lean-forward="true" selection-start-line="414" selection-start-column="24" selection-end-line="415" selection-end-column="120" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1558691063434" expanded="true" signature="46680:46758" ph="..." />
+            <marker date="1559573349385" expanded="true" signature="46715:46793" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Age/AgePurchase.html">
+    <entry file="file://$PROJECT_DIR$/Analyse/Age/Purchase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="338" column="56" lean-forward="false" selection-start-line="338" selection-start-column="56" selection-end-line="338" selection-end-column="56" />
+        <state relative-caret-position="755">
+          <caret line="415" column="120" lean-forward="false" selection-start-line="415" selection-start-column="120" selection-end-line="415" selection-end-column="120" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1558691173915" expanded="true" signature="51575:51653" ph="..." />
+            <element signature="n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559573349376" expanded="true" signature="52804:52882" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Gender/GenderCategory.html">
+    <entry file="file://$PROJECT_DIR$/Analyse/Gender/Category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="337" column="57" lean-forward="false" selection-start-line="337" selection-start-column="57" selection-end-line="337" selection-end-column="57" />
+        <state relative-caret-position="368">
+          <caret line="414" column="120" lean-forward="false" selection-start-line="414" selection-start-column="120" selection-end-line="414" selection-end-column="120" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1558691173909" expanded="true" signature="54039:54117" ph="..." />
+            <marker date="1559573349391" expanded="true" signature="60343:60421" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Gender/GenderPurchase.html">
+    <entry file="file://$PROJECT_DIR$/Analyse/Occupation/Category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="336" column="46" lean-forward="false" selection-start-line="336" selection-start-column="46" selection-end-line="336" selection-end-column="46" />
+        <state relative-caret-position="500">
+          <caret line="379" column="35" lean-forward="false" selection-start-line="379" selection-start-column="35" selection-end-line="379" selection-end-column="35" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#5;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#6;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1558691204505" expanded="true" signature="51065:51143" ph="..." />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1559573396591" expanded="true" signature="55903:55981" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analyse/Product/Product.html">
+    <entry file="file://$PROJECT_DIR$/Analyse/Gender/Purchase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="378" column="21" lean-forward="true" selection-start-line="378" selection-start-column="21" selection-end-line="378" selection-end-column="21" />
+        <state relative-caret-position="202">
+          <caret line="395" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1045" selection-end-column="0" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1558691063422" expanded="true" signature="54031:54109" ph="..." />
+            <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559573368491" expanded="true" signature="52376:52454" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analyse/Occupation/Purchase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="707" column="72" lean-forward="false" selection-start-line="707" selection-start-column="72" selection-end-line="707" selection-end-column="72" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#section#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559576656944" expanded="true" signature="48992:49070" ph="..." />
           </folding>
         </state>
       </provider>
