@@ -335,8 +335,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> ready to develop</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> ready to develop</a></li>
+                        <li><a href="../Product/Product.html"><i class="fa fa-circle-o"></i>Product</a></li>
+                        <li><a href="../Product/Category.html"><i class="fa fa-circle-o"></i>Category</a></li>
                     </ul>
                 </li>
                 <!--<li class="treeview">-->
@@ -581,7 +581,7 @@
                                         textStyle: {                 //---主标题内容样式
                                             color: '#ccc'
                                         },
-                                        padding:[0,0,300,600]
+                                        padding:[0,0,100,20]
                                     },
                                     tooltip : {},
                                     axisTick:{
@@ -593,14 +593,14 @@
                                         color:'#ccc'            //---默认取轴线的颜色
                                     },
                                     legend: {
-                                        data:['money'],
+                                        data:['Money', 'Pareto index'],
                                         textStyle:{                 //----图例内容样式
                                             color:'#ccc'               //---所有图例的字体颜色
                                         }
                                     },
                                     xAxis: {
-                                        name: 'Product ID',
-                                        data: ["00025442","00110742","00255842","00184942","00059442","00112142","00110942","00237542","00057642","00010742"],
+                                        name: '      Product ID',
+                                        data: ["0254","1107","2558","1849","0594","1121","1109","2375","0576","0107"],
                                         nameTextStyle:{             //---坐标轴名称样式
                                             color:"#ccc"
                                         },
@@ -610,8 +610,9 @@
                                             }
                                         }
                                     },
-                                    yAxis: {
+                                    yAxis: [{
                                         name: "Money",
+                                        type:'value',
                                         nameTextStyle:{             //---坐标轴名称样式
                                             color:"#ccc"
                                         },
@@ -619,8 +620,28 @@
                                             lineStyle: {
                                                 color: '#ccc'
                                             }
+                                        },
+                                        axisLabel: {
+                                            formatter: '{value} mi'
                                         }
                                     },
+                                        {
+                                            axisLabel: {
+                                                formatter: '%{value}'
+                                            },
+                                            type: 'value',
+                                            scale: true,
+                                            name: 'Pareto index',
+                                            max: 6.0,
+                                            min: 0.0,
+                                            boundaryGap: [0.2, 0.2],
+                                            axisLine: {
+                                                lineStyle: {
+                                                    color: '#ccc'
+                                                }
+                                            }
+                                        }
+                                        ],
                                     series: [{
                                         name: 'Money',
                                         type: 'bar',
@@ -628,7 +649,14 @@
                                         lineStyle:{
                                             color:'#ccc'
                                         }
-                                    }]
+                                        },
+                                        {
+                                            name:'Pareto index',
+                                            type:'line',
+                                            yAxisIndex:1,
+                                            data:[0.549,1.075,1.566,2.045,2.523,2.999,3.462,3.922,4.370,4.806]
+                                        }
+                                    ]
                                 };
 
                                 // 使用刚指定的配置项和数据显示图表。
