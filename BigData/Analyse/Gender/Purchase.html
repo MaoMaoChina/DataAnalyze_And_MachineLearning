@@ -436,32 +436,23 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-circle-o"></i> Level One
-                                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                                <li class="treeview">
-                                    <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                                        <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                        <li><a href="../Stay/Purchase.html"><i class="fa fa-circle-o"></i>City Purchase</a></li>
+                        <li><a href="../Stay/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fa fa-users"></i> <span>Marital_Status</span></a></li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-users"></i> <span>Marital_Status</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../Marital_Status/Purchase.html"><i class="fa fa-circle-o"></i>Marital_Status Purchase</a></li>
+                        <li><a href="../Marital_Status/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                    </ul>
+                </li>
                 <li class="treeview">
                     <a href="#">
                         <i class="glyphicon glyphicon-th"></i> <span>Combined Data</span>
@@ -656,7 +647,12 @@
                                     var myChart = echarts.init(document.getElementById('GenderPurchasePie'));
                                     option = {
                                         backgroundColor: '#2c343c',
-
+                                        legend: {
+                                            data:['Purchase','Purchase/Num'],
+                                            textStyle:{                 //----图例内容样式
+                                                color:'#ccc'               //---所有图例的字体颜色
+                                            }
+                                        },
 //                                        title: {
 //                                            text: 'Gender Purchase(Pie Chart)',
 //                                            left: 'center',

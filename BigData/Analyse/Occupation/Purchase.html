@@ -436,32 +436,23 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-circle-o"></i> Level One
-                                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                                <li class="treeview">
-                                    <a href="#"><i class="fa fa-circle-o"></i> Level Two
-                                        <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
-                    </span>
-                                    </a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+                        <li><a href="../Stay/Purchase.html"><i class="fa fa-circle-o"></i>City Purchase</a></li>
+                        <li><a href="../Stay/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fa fa-users"></i> <span>Marital_Status</span></a></li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-users"></i> <span>Marital_Status</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../Marital_Status/Purchase.html"><i class="fa fa-circle-o"></i>Marital_Status Purchase</a></li>
+                        <li><a href="../Marital_Status/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                    </ul>
+                </li>
                 <li class="treeview">
                     <a href="#">
                         <i class="glyphicon glyphicon-th"></i> <span>Combined Data</span>
@@ -649,7 +640,12 @@
                                     var myChart = echarts.init(document.getElementById('GenderPurchasePie'));
                                     option = {
                                         backgroundColor: '#2c343c',
-
+                                        legend: {
+                                            data:['Purchase','Purchase/Num'],
+                                            textStyle:{                 //----图例内容样式
+                                                color:'#ccc'               //---所有图例的字体颜色
+                                            }
+                                        },
 //                                        title: {
 //                                            text: 'Gender Purchase(Pie Chart)',
 //                                            left: 'center',
@@ -675,10 +671,10 @@
 
                                         series : [
                                             {
-                                                name:'Category',
+                                                name:'Purchase',
                                                 type:'pie',
                                                 radius : '55%',
-                                                center: ['50%', '50%'],
+                                                center: ['30%', '50%'],
                                                 data:[
                                                     {value:657, name:'4'},
                                                     {value:625, name:'0'},
@@ -690,8 +686,57 @@
                                                     {value:255, name:'14'},
                                                     {value:234, name:'16'},
                                                     {value:233, name:'2'},
-                                                    {value:233, name:'2'},
                                                     {value:1067, name:'Others'}
+                                                ].sort(function (a, b) { return a.value - b.value; }),
+                                                roseType: 'radius',
+                                                label: {
+                                                    normal: {
+                                                        textStyle: {
+                                                            color: 'rgba(255, 255, 255, 0.3)'
+                                                        }
+                                                    }
+                                                },
+                                                labelLine: {
+                                                    normal: {
+                                                        lineStyle: {
+                                                            color: 'rgba(255, 255, 255, 0.3)'
+                                                        },
+                                                        smooth: 0.2,
+                                                        length: 10,
+                                                        length2: 20
+                                                    }
+                                                },
+                                                itemStyle: {
+                                                    normal: {
+                                                        color: '#c23531',
+                                                        shadowBlur: 200,
+                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                                    }
+                                                },
+
+                                                animationType: 'scale',
+                                                animationEasing: 'elasticOut',
+                                                animationDelay: function (idx) {
+                                                    return Math.random() * 200;
+                                                }
+                                            },
+                                            {
+                                                name:'Purchase/Num',
+                                                type:'pie',
+                                                radius : '55%',
+                                                center: ['70%', '50%'],
+                                                data:[
+                                                    {value:657/740, name:'4'},
+                                                    {value:625/688, name:'0'},
+                                                    {value:549/669, name:'7'},
+                                                    {value:414/517, name:'1'},
+                                                    {value:387/491, name:'17'},
+                                                    {value:300/376, name:'12'},
+                                                    {value:292/273, name:'20'},
+                                                    {value:255/294, name:'14'},
+                                                    {value:234/235, name:'16'},
+                                                    {value:233/256, name:'2'},
+                                                    {value:1067/1352, name:'Others'}
                                                 ].sort(function (a, b) { return a.value - b.value; }),
                                                 roseType: 'radius',
                                                 label: {
