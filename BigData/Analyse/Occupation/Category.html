@@ -454,7 +454,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../Stay/Purchase.html"><i class="fa fa-circle-o"></i>City Purchase</a></li>
+                        <li><a href="../Stay/Purchase.html"><i class="fa fa-circle-o"></i>Stay_Year Purchase</a></li>
                         <li><a href="../Stay/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
@@ -552,314 +552,94 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <div id="CategoryPreferPie" style="height: 500px;"></div>
+                            <div id="OccupationCategoryPie" style="height: 500px;"></div>
                             <script type="text/javascript">
                                 // 基于准备好的dom，初始化echarts实例
-                                var myChart = echarts.init(document.getElementById('CategoryPreferPie'));
-                                var colors = ['#FFAE57', '#FF7853', '#EA5151', '#CC3F57', '#9A2555'];
-                                var bgColor = '#2c343c';
+                                var myChart = echarts.init(document.getElementById('OccupationCategoryPie'));
 
-                                var itemStyle = {
-                                    star5: {
-                                        color: colors[0]
-                                    },
-                                    star4: {
-                                        color: colors[1]
-                                    },
-                                    star3: {
-                                        color: colors[2]
-                                    },
-                                    star2: {
-                                        color: colors[3]
-                                    }
-                                };
-
-                                var data = [{
-                                    name: 'Woman',
-                                    itemStyle: {
-                                        normal: {
-                                            color: colors[1]
+                                // 指定图表的配置项和数据
+                                var option = {
+                                    backgroundColor: '#2c343c',
+//                                    title: {
+//                                        textStyle: {                 //---主标题内容样式
+//                                            color: '#ccc'
+//                                        },
+//                                        padding:[10,0,300,600]
+//                                    },
+                                    tooltip : {},
+                                    axisTick:{
+                                        lineStyle:{
+                                            color:'#ccc'          //---默认取轴线的颜色
                                         }
                                     },
-                                    children: [{
-                                        name: 'CG: 1',
-                                        children: [{
-                                            name: '1108',
-                                            children: [{
-                                                name: '5933348'
-                                            }]
-                                        }, {
-                                            name: '0254',
-                                            children: [{
-                                                name: '5763542'
-                                            }]
-                                        }, {
-                                            name: '1107',
-                                            children: [{
-                                                name: '5632357'
-                                            }]
-                                        }, {
-                                            name: '1109',
-                                            children:[{
-                                                name:'5066142'
-                                            }]
+                                    axisLabel:{                 //---坐标轴 标签
+                                        color:'#ccc'            //---默认取轴线的颜色
+                                    },
+                                    legend: {
+                                        data:['Money', 'Num'],
+                                        textStyle:{                 //----图例内容样式
+                                            color:'#ccc'               //---所有图例的字体颜色
+                                        }
+                                    },
+                                    xAxis: {
+                                        name: '    Age',
+                                        data: ["0 C1", "1 C1", "2 C1", "3 C1", "4 C1", "5 C1", "6 C1", "7 C1", "8 C1", "9 C1", "10 C1", "11 C1", "12 C1", "13 C1", "14 C1", "15 C1", "16 C1", "17 C1", "18 C1", "19 C1", "20 C1"],
+
+                                        nameTextStyle:{             //---坐标轴名称样式
+                                            color:"#ccc"
                                         },
-                                            {
-                                                name: '1121',
-                                                children:[{
-                                                    name:'4901047'
-                                                }]
-                                            },
-                                            {
-                                                name: '1849',
-                                                children:[{
-                                                    name:'4723224'
-                                                }]
+                                        axisLine: {
+                                            lineStyle: {
+                                                color: '#ccc'
                                             }
-                                        ]
-                                    }, {
-                                        name: 'CG: 6',
-                                        children: [{
-                                            name: '0594',
-                                            children: [{
-                                                name: '6007826'
-                                            }]
-                                        }, {
-                                            name: '1486',
-                                            children: [{
-                                                name: '5049905'
-                                            }]
-                                        }, {
-                                            name: '0288',
-                                            children: [{
-                                                name: '4867128'
-                                            }]
-                                        }]
+                                        }
+                                    },
+                                    yAxis: [{
+                                        name: "Money",
+                                        nameTextStyle:{             //---坐标轴名称样式
+                                            color:"#ccc"
+                                        },
+                                        axisLine: {
+                                            lineStyle: {
+                                                color: '#ccc'
+                                            }
+                                        },
+                                        axisLabel: {
+                                            formatter: '{value} Mi'
+                                        }
                                     },
                                         {
-                                            name: 'CG: 16',
-                                            children: [{
-                                                name: '2558',
-                                                children: [{
-                                                    name: '6690088'
-                                                }]
-                                            }
-                                            ]
-                                        }
-                                    ]
-                                }, {
-                                    name: 'Man',
-                                    itemStyle: {
-                                        color: colors[2]
-                                    },
-                                    children: [{
-                                        name: 'CG: 1',
-                                        children: [{
-                                            name: '0254',
-                                            children: [{
-                                                name: '21768902'
-                                            }]
-                                        }, {
-                                            name: '1107',
-                                            children: [{
-                                                name: '20750212'
-                                            }]
-                                        }, {
-                                            name: '1849',
-                                            children: [{
-                                                name: '19337647'
-                                            }]
-                                        },
-                                            {
-                                                name: '1121',
-                                                children: [{
-                                                    name: '18981577'
-                                                }]
-                                            },
-                                            {
-                                                name: '0576',
-                                                children: [{
-                                                    name: '18720360'
-                                                }]
-                                            },
-                                            {
-                                                name: '2375',
-                                                children: [{
-                                                    name: '18562039'
-                                                }]
-                                            },
-                                            {
-                                                name: '1109',
-                                                children: [{
-                                                    name: '18166396'
-                                                }]
-                                            },
-                                            {
-                                                name: '0107',
-                                                children: [{
-                                                    name: '17517618'
-                                                }]
-                                            }]
-                                    }, {
-                                        name: 'CG: 6',
-                                        children: [{
-                                            name: '0594',
-                                            children: [{
-                                                name: '17940473'
-                                            }]
-                                        }]
-                                    }, {
-                                        name: 'CG: 16',
-                                        children: [{
-                                            name: '2558',
-                                            children: [{
-                                                name: '17962354'
-                                            }]
-                                        }]
-                                    }]
-                                }];
-
-                                for (var j = 0; j < data.length; ++j) {
-                                    var level1 = data[j].children;
-                                    for (var i = 0; i < level1.length; ++i) {
-                                        var block = level1[i].children;
-                                        var bookScore = [];
-                                        var bookScoreId;
-                                        for (var star = 0; star < block.length; ++star) {
-                                            var number = star%4;
-                                            var style = (function (name) {
-                                                switch (number) {
-                                                    case 0:
-                                                        bookScoreId = 0;
-                                                        return itemStyle.star5;
-                                                    case 1:
-                                                        bookScoreId = 1;
-                                                        return itemStyle.star4;
-                                                    case 2:
-                                                        bookScoreId = 2;
-                                                        return itemStyle.star3;
-                                                    case 3:
-                                                        bookScoreId = 3;
-                                                        return itemStyle.star2;
+                                            type: 'value',
+                                            name: 'Num',
+                                            position: 'left',
+                                            offset:80,
+                                            min: 0,
+                                            max: 300,
+                                            boundaryGap: [0.2, 0.2],
+                                            axisLine: {
+                                                lineStyle: {
+                                                    color: '#ccc'
                                                 }
-                                            })(block[star].name);
-
-                                            block[star].label = {
-                                                color: style.color,
-                                                downplay: {
-                                                    opacity: 0.5
-                                                }
-                                            };
-                                            // if has content in this star
-                                            if (block[star].children) {
-                                                style = {
-                                                    opacity: 1,
-                                                    color: style.color
-                                                };
-                                                block[star].children.forEach(function (book) {
-                                                    book.value = 1;
-                                                    book.itemStyle = style;
-
-                                                    book.label = {
-                                                        color: style.color
-                                                    };
-
-                                                    var value = 1;
-                                                    if (bookScoreId === 0 || bookScoreId === 3) {
-                                                        value = 5;
-                                                    }
-
-                                                    if (bookScore[bookScoreId]) {
-                                                        bookScore[bookScoreId].value += value;
-                                                    }
-                                                    else {
-                                                        bookScore[bookScoreId] = {
-                                                            color: colors[bookScoreId],
-                                                            value: value
-                                                        };
-                                                    }
-                                                });
+                                            },
+                                            axisLabel: {
+                                                formatter: '{value} Hu'
                                             }
                                         }
-
-                                        level1[i].itemStyle = {
-                                            color: data[j].itemStyle.color
-                                        };
-                                    }
-                                }
-
-                                option = {
-                                    backgroundColor: bgColor,
-                                    color: colors,
+                                    ],
                                     series: [{
-                                        type: 'sunburst',
-                                        // location of pie
-                                        center: ['50%', '48%'],
-                                        data: data,
-                                        sort: function (a, b) {
-                                            if (a.depth === 1) {
-                                                return b.getValue() - a.getValue();
-                                            }
-                                            else {
-                                                return a.dataIndex - b.dataIndex;
-                                            }
-                                        },
-                                        // style of font
-                                        label: {
-                                            rotate: 'radial',
-                                            color: bgColor
-                                        },
-                                        // style of line
-                                        itemStyle: {
-                                            borderColor: bgColor,
-                                            borderWidth: 2
-                                        },
-
-                                        levels: [{}, {
-                                            r0: 0,
-                                            r: 40,
-                                            label: {
-                                                rotate: 0
-                                            }
-                                        },
-                                            {
-                                                r0: 40,
-                                                r: 105
-                                            },
-                                            {
-                                                r0: 115,
-                                                r: 140,
-                                                itemStyle: {
-                                                    shadowBlur: 2,
-                                                    shadowColor: colors[2],
-                                                    color: 'transparent'
-                                                },
-                                                label: {
-                                                    rotate: 'tangential',
-                                                    fontSize: 10,
-                                                    color: colors[0]
-                                                }
-                                            }, {
-                                                r0: 140,
-                                                r: 145,
-                                                itemStyle: {
-                                                    shadowBlur: 80,
-                                                    shadowColor: colors[0]
-                                                },
-                                                label: {
-                                                    position: 'outside',
-                                                    textShadowBlur: 5,
-                                                    textShadowColor: '#333',
-                                                },
-                                                downplay: {
-                                                    label: {
-                                                        opacity: 0.5
-                                                    }
-                                                }
-                                            }]
-                                    }]
+                                        name: 'Money',
+                                        type: 'bar',
+                                        data: [231, 133, 75, 54, 256, 49, 62, 219, 6, 15, 43, 35, 126, 21, 100, 46, 87, 174, 23, 26, 88],  // 保留两位有效数字
+                                        lineStyle:{
+                                            color:'#ccc'
+                                        }
+                                    },
+                                        {
+                                            name:'Num',
+                                            type:'bar',
+                                            data:[173, 101, 56, 39, 189, 36, 45, 158, 5, 11, 32, 26, 91, 15, 73, 33, 63, 125, 17, 20, 67],
+                                        }]
                                 };
-
                                 myChart.setOption(option);
                             </script>
                         </div>

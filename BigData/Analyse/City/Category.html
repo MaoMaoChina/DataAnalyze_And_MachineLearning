@@ -382,13 +382,12 @@
                         <i class="fa fa-venus-mars"></i>
                         <span>Gender</span>
                         <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <i class="fa fa-angle-left pull-right active"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="../Gender/Purchase.html"><i class="fa fa-circle-o"></i>Gender Purchase</a></li>
                         <li><a href="../Gender/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
-                        <!--<li><a href="#"><i class="fa fa-circle-o"></i> ready to develop</a></li>-->
                     </ul>
                 </li>
                 <li class="treeview">
@@ -400,7 +399,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="../Age/Purchase.html"><i class="fa fa-circle-o"></i>Age Purchase</a></li>
-                        <li><a href="../Age/Category.html"><i class="fa fa-circle-o"></i>Age Category</a></li>
+                        <li><a href="../Age/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                         <!--<li><a href="#"><i class="fa fa-circle-o"></i>ready to develop</a></li>-->
                     </ul>
                 </li>
@@ -413,9 +412,28 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="../Occupation/Purchase.html"><i class="fa fa-circle-o"></i>Occupation Purchase</a></li>
-                        <li><a href="../Occupation/Purchase.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                        <li><a href="../Occupation/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
+                <!--<li>-->
+                <!--<a href="bower_components2/admin-lte/pages/calendar.html">-->
+                <!--<i class="fa fa-calendar"></i> <span>Calendar</span>-->
+                <!--<span class="pull-right-container">-->
+                <!--<small class="label pull-right bg-red">3</small>-->
+                <!--<small class="label pull-right bg-blue">17</small>-->
+                <!--</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="bower_components2/admin-lte/pages/mailbox/mailbox.html">-->
+                <!--<i class="fa fa-envelope"></i> <span>Mailbox</span>-->
+                <!--<span class="pull-right-container">-->
+                <!--<small class="label pull-right bg-yellow">12</small>-->
+                <!--<small class="label pull-right bg-green">16</small>-->
+                <!--<small class="label pull-right bg-red">5</small>-->
+                <!--</span>-->
+                <!--</a>-->
+                <!--</li>-->
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-home"></i> <span>City</span>
@@ -424,11 +442,11 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i>City Purchase</a></li>
-                        <li><a href="Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                        <li><a href="../City/Purchase.html"><i class="fa fa-circle-o"></i>City Purchase</a></li>
+                        <li><a href="../City/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="#">
                         <i class="fa fa-hourglass-half"></i> <span>Stay_Year</span>
                         <span class="pull-right-container">
@@ -436,10 +454,11 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="#"><i class="fa fa-circle-o"></i>Stay_Year Purchase</a></li>
-                        <li><a href="Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
+                        <li><a href="../Stay/Purchase.html"><i class="fa fa-circle-o"></i>Stay_Year Purchase</a></li>
+                        <li><a href="../Stay/Category.html"><i class="fa fa-circle-o"></i>Category Prefer</a></li>
                     </ul>
                 </li>
+
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-users"></i> <span>Marital_Status</span>
@@ -524,7 +543,7 @@
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
 
-                            <h3 class="box-title">Gender Purchase Bar Chart</h3>
+                            <h3 class="box-title">Category Prefer Bar Chart</h3>
 
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -533,10 +552,10 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <div id="GenderPurchaseBar" style="height: 500px;"></div>
+                            <div id="OccupationCategoryPie" style="height: 500px;"></div>
                             <script type="text/javascript">
                                 // 基于准备好的dom，初始化echarts实例
-                                var myChart = echarts.init(document.getElementById('GenderPurchaseBar'));
+                                var myChart = echarts.init(document.getElementById('OccupationCategoryPie'));
 
                                 // 指定图表的配置项和数据
                                 var option = {
@@ -557,14 +576,14 @@
                                         color:'#ccc'            //---默认取轴线的颜色
                                     },
                                     legend: {
-                                        data:['Money','Num'],
+                                        data:['Money', 'Num'],
                                         textStyle:{                 //----图例内容样式
                                             color:'#ccc'               //---所有图例的字体颜色
                                         }
                                     },
                                     xAxis: {
-                                        name: '      Stay_Years',
-                                        data: ["0", "1", "2", "3", "4+"],
+                                        name: '    Age',
+                                        data: ["A C1", "B C1", "C C1"],
                                         nameTextStyle:{             //---坐标轴名称样式
                                             color:"#ccc"
                                         },
@@ -575,7 +594,6 @@
                                         }
                                     },
                                     yAxis: [{
-                                        type: 'value',
                                         name: "Money",
                                         nameTextStyle:{             //---坐标轴名称样式
                                             color:"#ccc"
@@ -592,21 +610,25 @@
                                         {
                                             type: 'value',
                                             name: 'Num',
-                                            position: 'right',
+                                            position: 'left',
+                                            offset:80,
                                             min: 0,
-                                            max: 2500,
+                                            max: 800,
                                             boundaryGap: [0.2, 0.2],
                                             axisLine: {
                                                 lineStyle: {
                                                     color: '#ccc'
                                                 }
+                                            },
+                                            axisLabel: {
+                                                formatter: '{value} Hu'
                                             }
                                         }
                                     ],
                                     series: [{
                                         name: 'Money',
                                         type: 'bar',
-                                        data: [672, 1763, 934, 872, 774],  // 保留三位有效数字
+                                        data: [451, 771, 660],  // 保留两位有效数字
                                         lineStyle:{
                                             color:'#ccc'
                                         }
@@ -614,12 +636,9 @@
                                         {
                                             name:'Num',
                                             type:'bar',
-                                            data:[772, 2086, 1145, 979, 909]
-                                        }
-                                    ]
+                                            data:[345, 574, 463]
+                                        }]
                                 };
-
-                                // 使用刚指定的配置项和数据显示图表。
                                 myChart.setOption(option);
                             </script>
                         </div>
@@ -628,151 +647,6 @@
                     <!-- /.box -->
 
                     <!-- Area chart -->
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <i class="fa fa-bar-chart-o"></i>
-
-                            <h3 class="box-title">Gender Purchase Pie Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div id="GenderPurchasePie" style="height: 500px;">
-                                <script>
-                                    var myChart = echarts.init(document.getElementById('GenderPurchasePie'));
-                                    option = {
-                                        legend: {
-                                            data:['Purchase','Purchase/Num'],
-                                            textStyle:{                 //----图例内容样式
-                                                color:'#ccc'               //---所有图例的字体颜色
-                                            }
-                                        },
-                                        backgroundColor: '#2c343c',
-
-//                                        title: {
-//                                            text: 'Gender Purchase(Pie Chart)',
-//                                            left: 'center',
-//                                            top: 20,
-//                                            textStyle: {
-//                                                color: '#ccc'
-//                                            }
-//                                        },
-
-                                        tooltip : {
-                                            trigger: 'item',
-                                            formatter: "{a} <br/>{b} : {c} ({d}%)"
-                                        },
-
-//                                        visualMap: {
-//                                            show: false,
-//                                            min: 800,
-//                                            max: 4000,
-//                                            inRange: {
-//                                                colorLightness: [0, 1]
-//                                            }
-//                                        },
-
-                                        series : [
-                                            {
-                                                name:'Purchase',
-                                                type:'pie',
-                                                radius : '55%',
-                                                center: ['30%', '50%'],
-                                                data:[
-                                                    {value:672,  name:'0'},
-                                                    {value:1763, name:'1'},
-                                                    {value:934,  name:'2'},
-                                                    {value:872,  name:'3'},
-                                                    {value:774,  name:'4+'}
-                                                ].sort(function (a, b) { return a.value - b.value; }),
-                                                roseType: 'radius',
-                                                label: {
-                                                    normal: {
-                                                        textStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        }
-                                                    }
-                                                },
-                                                labelLine: {
-                                                    normal: {
-                                                        lineStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        },
-                                                        smooth: 0.2,
-                                                        length: 10,
-                                                        length2: 20
-                                                    }
-                                                },
-                                                itemStyle: {
-                                                    normal: {
-                                                        color: '#c23531',
-                                                        shadowBlur: 200,
-                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                                    }
-                                                },
-
-                                                animationType: 'scale',
-                                                animationEasing: 'elasticOut',
-                                                animationDelay: function (idx) {
-                                                    return Math.random() * 200;
-                                                }
-                                            },
-                                            {
-                                                name:'Purchase/Num',
-                                                type:'pie',
-                                                radius : '55%',
-                                                center: ['70%', '50%'],
-                                                data:[
-                                                    {value:672/772,  name:'0'},
-                                                    {value:1763/2086, name:'1'},
-                                                    {value:934/1145,  name:'2'},
-                                                    {value:872/979,  name:'3'},
-                                                    {value:774/909,  name:'4+'}
-                                                ].sort(function (a, b) { return a.value - b.value; }),
-                                                roseType: 'radius',
-                                                label: {
-                                                    normal: {
-                                                        textStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        }
-                                                    }
-                                                },
-                                                labelLine: {
-                                                    normal: {
-                                                        lineStyle: {
-                                                            color: 'rgba(255, 255, 255, 0.3)'
-                                                        },
-                                                        smooth: 0.2,
-                                                        length: 10,
-                                                        length2: 20
-                                                    }
-                                                },
-                                                itemStyle: {
-                                                    normal: {
-                                                        color: '#c23531',
-                                                        shadowBlur: 200,
-                                                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                                                    }
-                                                },
-
-                                                animationType: 'scale',
-                                                animationEasing: 'elasticOut',
-                                                animationDelay: function (idx) {
-                                                    return Math.random() * 200;
-                                                }
-                                            }
-                                        ]
-                                    };
-                                    myChart.setOption(option);
-                                </script>
-                            </div>
-                        </div>
-                        <!-- /.box-body-->
-                    </div>
                     <!-- /.box -->
 
                 </div>
@@ -814,268 +688,6 @@
 <script src="../../Library/bower_components/Flot/jquery.flot.categories.js"></script>
 <!-- Page script -->
 <script>
-    $(function () {
-        /*
-         * Flot Interactive Chart
-         * -----------------------
-         */
-        // We use an inline data source in the example, usually data would
-        // be fetched from a server
-        var data = [], totalPoints = 100;
-
-        function getRandomData() {
-
-            if (data.length > 0)
-                data = data.slice(1);
-
-            // Do a random walk
-            while (data.length < totalPoints) {
-
-                var prev = data.length > 0 ? data[data.length - 1] : 50,
-                    y    = prev + Math.random() * 10 - 5;
-
-                if (y < 0) {
-                    y = 0
-                } else if (y > 100) {
-                    y = 100
-                }
-
-                data.push(y)
-            }
-
-            // Zip the generated y values with the x values
-            var res = [];
-            for (var i = 0; i < data.length; ++i) {
-                res.push([i, data[i]])
-            }
-
-            return res
-        }
-
-        var interactive_plot = $.plot('#interactive', [getRandomData()], {
-            grid  : {
-                borderColor: '#f3f3f3',
-                borderWidth: 1,
-                tickColor  : '#f3f3f3'
-            },
-            series: {
-                shadowSize: 0, // Drawing is faster without shadows
-                color     : '#3c8dbc'
-            },
-            lines : {
-                fill : true, //Converts the line chart to area chart
-                color: '#3c8dbc'
-            },
-            yaxis : {
-                min : 0,
-                max : 100,
-                show: true
-            },
-            xaxis : {
-                show: true
-            }
-        });
-
-        var updateInterval = 500; //Fetch data ever x milliseconds
-        var realtime       = 'on';//If == to on then fetch data every x seconds. else stop fetching
-        function update() {
-
-            interactive_plot.setData([getRandomData()]);
-
-            // Since the axes don't change, we don't need to call plot.setupGrid()
-            interactive_plot.draw();
-            if (realtime === 'on')
-                setTimeout(update, updateInterval)
-        }
-
-        //INITIALIZE REALTIME DATA FETCHING
-        if (realtime === 'on') {
-            update()
-        }
-        //REALTIME TOGGLE
-        $('#realtime .btn').click(function () {
-            if ($(this).data('toggle') === 'on') {
-                realtime = 'on'
-            }
-            else {
-                realtime = 'off'
-            }
-            update()
-        });
-        /*
-         * END INTERACTIVE CHART
-         */
-
-        /*
-         * LINE CHART
-         * ----------
-         */
-        //LINE randomly generated data
-
-        var sin = [], cos = [];
-        for (var i = 0; i < 14; i += 0.5) {
-            sin.push([i, Math.sin(i)]);
-            cos.push([i, Math.cos(i)])
-        }
-        var line_data1 = {
-            data : sin,
-            color: '#3c8dbc'
-        };
-        var line_data2 = {
-            data : cos,
-            color: '#00c0ef'
-        };
-        $.plot('#line-chart', [line_data1, line_data2], {
-            grid  : {
-                hoverable  : true,
-                borderColor: '#f3f3f3',
-                borderWidth: 1,
-                tickColor  : '#f3f3f3'
-            },
-            series: {
-                shadowSize: 0,
-                lines     : {
-                    show: true
-                },
-                points    : {
-                    show: true
-                }
-            },
-            lines : {
-                fill : false,
-                color: ['#3c8dbc', '#f56954']
-            },
-            yaxis : {
-                show: true
-            },
-            xaxis : {
-                show: true
-            }
-        });
-        //Initialize tooltip on hover
-        $('<div class="tooltip-inner" id="line-chart-tooltip"></div>').css({
-            position: 'absolute',
-            display : 'none',
-            opacity : 0.8
-        }).appendTo('body');
-        $('#line-chart').bind('plothover', function (event, pos, item) {
-
-            if (item) {
-                var x = item.datapoint[0].toFixed(2),
-                    y = item.datapoint[1].toFixed(2);
-
-                $('#line-chart-tooltip').html(item.series.label + ' of ' + x + ' = ' + y)
-                    .css({ top: item.pageY + 5, left: item.pageX + 5 })
-                    .fadeIn(200)
-            } else {
-                $('#line-chart-tooltip').hide()
-            }
-
-        });
-        /* END LINE CHART */
-
-        /*
-         * FULL WIDTH STATIC AREA CHART
-         * -----------------
-         */
-        var areaData = [[2, 88.0], [3, 93.3], [4, 102.0], [5, 108.5], [6, 115.7], [7, 115.6],
-            [8, 124.6], [9, 130.3], [10, 134.3], [11, 141.4], [12, 146.5], [13, 151.7], [14, 159.9],
-            [15, 165.4], [16, 167.8], [17, 168.7], [18, 169.5], [19, 168.0]]
-        $.plot('#area-chart', [areaData], {
-            grid  : {
-                borderWidth: 0
-            },
-            series: {
-                shadowSize: 0, // Drawing is faster without shadows
-                color     : '#00c0ef'
-            },
-            lines : {
-                fill: true //Converts the line chart to area chart
-            },
-            yaxis : {
-                show: false
-            },
-            xaxis : {
-                show: false
-            }
-        });
-
-        /* END AREA CHART */
-
-        /*
-         * BAR CHART
-         * ---------
-         */
-
-        var bar_data = {
-            data : [['Category_1', 10], ['Category_2', 8], ['Category_3', 4], ['Category_4', 13], ['Category_5', 17], ['Category_6', 9]],
-            color: '#3c8dbc'
-        };
-        $.plot('#bar-chart', [bar_data], {
-            grid  : {
-                borderWidth: 1,
-                borderColor: '#f3f3f3',
-                tickColor  : '#f3f3f3'
-            },
-            series: {
-                bars: {
-                    show    : true,
-                    barWidth: 0.5,
-                    align   : 'center'
-                }
-            },
-            xaxis : {
-                mode      : 'categories',
-                tickLength: 0
-            }
-        });
-        /* END BAR CHART */
-
-        /*
-         * DONUT CHART
-         * -----------
-         */
-
-        var donutData = [
-            { label: 'Series2', data: 30, color: '#3c8dbc' },
-            { label: 'Series3', data: 20, color: '#0073b7' },
-            { label: 'Series4', data: 50, color: '#00c0ef' }
-        ];
-        $.plot('#donut-chart', donutData, {
-            series: {
-                pie: {
-                    show       : true,
-                    radius     : 1,
-                    innerRadius: 0.5,
-                    label      : {
-                        show     : true,
-                        radius   : 2 / 3,
-                        formatter: labelFormatter,
-                        threshold: 0.1
-                    }
-
-                }
-            },
-            legend: {
-                show: false
-            }
-        })
-        /*
-         * END DONUT CHART
-         */
-
-    });
-
-    /*
-     * Custom Label formatter
-     * ----------------------
-     */
-    function labelFormatter(label, series) {
-        return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
-            + label
-            + '<br>'
-            + Math.round(series.percent) + '%</div>'
-    }
 </script>
 </body>
 </html>
