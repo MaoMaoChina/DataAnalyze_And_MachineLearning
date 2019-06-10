@@ -95,3 +95,5 @@ a9.sort_values(['Purchase'],ascending=False,inplace=True)
 
 #print(a9.head(10))
 #a8.sort_values(['Purchase'],ascending=False,inplace=True)
+a10 = blackFriday.groupby('City_Category').get_group('C').groupby('Stay_In_Current_City_Years').agg({'Purchase':sum})
+print(a10)
