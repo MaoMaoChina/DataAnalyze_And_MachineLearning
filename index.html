@@ -1,0 +1,51 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+<body  >
+
+<div id="myModal" class="reveal-modal">
+    <div class="uploader blue">
+        <button id="imgPic"  onclick=Show() style="width:300px;height:270px;"/>
+        Gender:<input id="Gender" type="text" style="width:30px;"/>
+        Age:<input id="Age" type="text" style="width:30px;"/><br>
+        <p id ="Result" type="text ", style="width:30px;"/>
+
+
+    </div>
+    <a class="close-reveal-modal">×</a>
+</div>
+
+
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+    function Show() {
+        var Gender = parseInt(document.getElementById('Gender').value);
+        var Age = parseInt(document.getElementById('Age').value);
+        var data= {
+        "User_ID":null,"Product_ID":null,"Gender": "F", "Age":"55+","Occupation":2,"City":"A","CityStay":"2","Marital_Status":0,"Category":15
+        };
+        //alert(data);
+        $.ajax({
+            url: 'http://127.0.0.1:5000/RegressionPredict',
+            type: "post",
+            data: JSON.stringify(data),
+            contentType:'application/json; charset=UTF-8',
+            dataType: 'json',
+            success: function (result) {
+                var result1=JSON.stringify(result);
+                alert(result1);
+                document.getElementById('Result').innerHTML=result1;
+            },
+            error: function (e) {
+                alert("error");
+            }
+        })
+    }
+</script>
+</html>
