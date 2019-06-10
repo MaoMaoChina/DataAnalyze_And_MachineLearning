@@ -83,9 +83,9 @@
 
             <div class="box-body">
                 <!-- Name -->
-                <div class="form-group" id="Name">
+                <div class="form-group">
                   <label>Name</label>
-                  <input type="text" class="form-control">
+                  <input id="Name" type="text" class="form-control">
                 </div>
 
                 <!-- Gender -->
@@ -269,21 +269,22 @@
         var Marital_Status_Index = document.getElementById("Marital_Status").selectedIndex;
         var Marital_Status = document.getElementById("Marital_Status").options[Marital_Status_Index].value;
         var data = {"User_ID": null, "Product_ID":null, "Gender": Gender, "Age": Age, "Occupation": Occupation, "City": City, "CityStay": Stay_In_Current_City_Years, "Marital_Status": Marital_Status, "Category":null};
-        $.ajax({
+                $.ajax({
             url: 'http://127.0.0.1:5000/RegressionPredict',
             type: "post",
             data: JSON.stringify(data),
             contentType:'application/json; charset=UTF-8',
             dataType: 'json',
             success: function (result) {
-                var result=JSON.stringify(result);
-                document.getElementById('Result').innerHTML=result;
+                var money  = result["result"];
+                document.getElementById("Purchase").innerHTML = money;
+                var response = "Hello, " + document.getElementById("Name").value + ", Based on your characteristics, we predict that your spending on Black Friday will be："
+                document.getElementById("Result").innerHTML = response;
             },
             error: function (e) {
                 alert("error");
             }
         });
-        console.log(Marital_Status);
     }
 </script>
 </body>
