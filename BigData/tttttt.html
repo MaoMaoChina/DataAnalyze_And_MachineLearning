@@ -1,0 +1,244 @@
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Line chart -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <i class="fa fa-bar-chart-o"></i>
+
+                    <h3 class="box-title">Gender Purchase Bar Chart</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div id="GenderPurchaseBar" style="height: 500px;"></div>
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChart = echarts.init(document.getElementById('GenderPurchaseBar'));
+
+                        // 指定图表的配置项和数据
+                        var option = {
+                            backgroundColor: '#2c343c',
+//                                    title: {
+//                                        textStyle: {                 //---主标题内容样式
+//                                            color: '#ccc'
+//                                        },
+//                                        padding:[10,0,300,600]
+//                                    },
+                            tooltip : {},
+                            axisTick:{
+                                lineStyle:{
+                                    color:'#ccc'          //---默认取轴线的颜色
+                                }
+                            },
+                            axisLabel:{                 //---坐标轴 标签
+                                color:'#ccc'            //---默认取轴线的颜色
+                            },
+                            legend: {
+                                data:['Money','Num'],
+                                textStyle:{                 //----图例内容样式
+                                    color:'#ccc'               //---所有图例的字体颜色
+                                }
+                            },
+                            xAxis: {
+                                name: '      Stay_Years',
+                                data: ["0", "1", "2", "3", "4+"],
+                                nameTextStyle:{             //---坐标轴名称样式
+                                    color:"#ccc"
+                                },
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#ccc'
+                                    }
+                                }
+                            },
+                            yAxis: [{
+                                type: 'value',
+                                name: "Money",
+                                nameTextStyle:{             //---坐标轴名称样式
+                                    color:"#ccc"
+                                },
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#ccc'
+                                    }
+                                },
+                                axisLabel: {
+                                    formatter: '{value} Mi'
+                                }
+                            },
+                                {
+                                    type: 'value',
+                                    name: 'Num',
+                                    position: 'right',
+                                    min: 0,
+                                    max: 2500,
+                                    boundaryGap: [0.2, 0.2],
+                                    axisLine: {
+                                        lineStyle: {
+                                            color: '#ccc'
+                                        }
+                                    }
+                                }
+                            ],
+                            series: [{
+                                name: 'Money',
+                                type: 'bar',
+                                data: [672, 1763, 934, 872, 774],  // 保留三位有效数字
+                                lineStyle:{
+                                    color:'#ccc'
+                                }
+                            },
+                                {
+                                    name:'Num',
+                                    type:'bar',
+                                    data:[772, 2086, 1145, 979, 909]
+                                }
+                            ]
+                        };
+
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    </script>
+                </div>
+                <!-- /.box-body-->
+            </div>
+            <!-- /.box -->
+
+            <!-- Area chart -->
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <i class="fa fa-bar-chart-o"></i>
+
+                    <h3 class="box-title">Gender Purchase Pie Chart</h3>
+
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div id="GenderPurchasePie" style="height: 500px;">
+                        <script>
+                            var myChart = echarts.init(document.getElementById('GenderPurchasePie'));
+                            option = {
+                                legend: {
+                                    data:['Purchase','Purchase/Num'],
+                                    textStyle:{                 //----图例内容样式
+                                        color:'#ccc'               //---所有图例的字体颜色
+                                    }
+                                },
+                                backgroundColor: '#2c343c',
+                                tooltip : {
+                                    trigger: 'item',
+                                    formatter: "{a} <br/>{b} : {c} ({d}%)"
+                                },
+                                series : [
+                                    {
+                                        name:'Purchase',
+                                        type:'pie',
+                                        radius : '55%',
+                                        center: ['30%', '50%'],
+                                        data:[
+                                            {value:672,  name:'0'},
+                                            {value:1763, name:'1'},
+                                            {value:934,  name:'2'},
+                                            {value:872,  name:'3'},
+                                            {value:774,  name:'4+'}
+                                        ].sort(function (a, b) { return a.value - b.value; }),
+                                        roseType: 'radius',
+                                        label: {
+                                            normal: {
+                                                textStyle: {
+                                                    color: 'rgba(255, 255, 255, 0.3)'
+                                                }
+                                            }
+                                        },
+                                        labelLine: {
+                                            normal: {
+                                                lineStyle: {
+                                                    color: 'rgba(255, 255, 255, 0.3)'
+                                                },
+                                                smooth: 0.2,
+                                                length: 10,
+                                                length2: 20
+                                            }
+                                        },
+                                        itemStyle: {
+                                            normal: {
+                                                color: '#c23531',
+                                                shadowBlur: 200,
+                                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        },
+
+                                        animationType: 'scale',
+                                        animationEasing: 'elasticOut',
+                                        animationDelay: function (idx) {
+                                            return Math.random() * 200;
+                                        }
+                                    },
+                                    {
+                                        name:'Purchase/Num',
+                                        type:'pie',
+                                        radius : '55%',
+                                        center: ['70%', '50%'],
+                                        data:[
+                                            {value:672/772,  name:'0'},
+                                            {value:1763/2086, name:'1'},
+                                            {value:934/1145,  name:'2'},
+                                            {value:872/979,  name:'3'},
+                                            {value:774/909,  name:'4+'}
+                                        ].sort(function (a, b) { return a.value - b.value; }),
+                                        roseType: 'radius',
+                                        label: {
+                                            normal: {
+                                                textStyle: {
+                                                    color: 'rgba(255, 255, 255, 0.3)'
+                                                }
+                                            }
+                                        },
+                                        labelLine: {
+                                            normal: {
+                                                lineStyle: {
+                                                    color: 'rgba(255, 255, 255, 0.3)'
+                                                },
+                                                smooth: 0.2,
+                                                length: 10,
+                                                length2: 20
+                                            }
+                                        },
+                                        itemStyle: {
+                                            normal: {
+                                                color: '#c23531',
+                                                shadowBlur: 200,
+                                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                            }
+                                        },
+
+                                        animationType: 'scale',
+                                        animationEasing: 'elasticOut',
+                                        animationDelay: function (idx) {
+                                            return Math.random() * 200;
+                                        }
+                                    }
+                                ]
+                            };
+                            myChart.setOption(option);
+                        </script>
+                    </div>
+                </div>
+                <!-- /.box-body-->
+            </div>
+            <!-- /.box -->
+
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
