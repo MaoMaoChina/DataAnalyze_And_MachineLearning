@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title class="en">Black Friday</title>
+    <title class="fr">Vendredi noir</title>
+    <title class="zh">黑色星期五</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="../Library/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Library/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Library/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../Library/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../Library/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+        <a href="../Analyse/Product.html" class="logo">
+            <span class="logo-lg en"><b>Analyse</b></span>
+            <span class="logo-lg fr"><b>Analyse</b></span>
+            <span class="logo-lg zh"><b>分析</b></span>
+
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="logo">
+                <span class="logo-lg en"><b>Prediction</b></span>
+                <span class="logo-lg fr"><b>Prévisions</b></span>
+                <span class="logo-lg zh"><b>预测</b></span>
+            </a>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="header en">BF Data Information About</li>
+                <li class="header fr">Informations sur le VN</li>
+                <li class="header zh">关于黑五的数据:</li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="fa fa-child"></i>
+                        <span class="en">Prediction</span>
+                        <span class="fr">Prévisions</span>
+                        <span class="zh">预测</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="en"><a href="Money.html"><i class="fa fa-circle-o"></i>Purchase</a></li>
+                        <li class="fr"><a href="Money.html"><i class="fa fa-circle-o"></i>Achat</a></li>
+                        <li class="zh"><a href="Money.html"><i class="fa fa-circle-o"></i>购买力的预测</a></li>
+                        <li class="active en"><a href="#"><i class="fa fa-circle-o"></i>Gender</a></li>
+                        <li class="active fr"><a href="#"><i class="fa fa-circle-o"></i>Le sexe</a></li>
+                        <li class="active zh"><a href="#"><i class="fa fa-circle-o"></i>性别的预测</a></li>
+                        <li class="en"><a href="Marital_Status.html"><i class="fa fa-circle-o"></i>Marital_Status</a></li>
+                        <li class="fr"><a href="Marital_Status.html"><i class="fa fa-circle-o"></i>État_civil</a></li>
+                        <li class="zh"><a href="Marital_Status.html"><i class="fa fa-circle-o"></i>婚姻状况的预测</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header col-md-offset-2">
+            <h1 class="en">Fill and Predict</h1>
+            <h1 class="fr">Remplir et prédire</h1>
+            <h1 class="zh">填写并预测</h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <!-- right column -->
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="box box-warning">
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input id="Name" type="text" class="form-control">
+                            </div>
+
+                            <!-- Marital Status -->
+                            <div class="form-group" >
+                                <label>Marital Status</label>
+                                <select class="form-control" id="Marital_Status">
+                                    <option value=1>Married</option>
+                                    <option value=0>Unmarried</option>
+                                </select>
+                            </div>
+
+                            <!-- City -->
+                            <div class="form-group">
+                                <label>City</label>
+                                <select class="form-control"  id="City">
+                                    <option value="A">Paris</option>
+                                    <option value="B">New York</option>
+                                    <option value="C">Shanghai</option>
+                                </select>
+                            </div>
+
+                            <!-- Age -->
+                            <div class="form-group">
+                                <label>Age</label>
+                                <select class="form-control" id="Age">
+                                    <option value="0-17">0-17</option>
+                                    <option value="18-25">18-25</option>
+                                    <option value="26-35">26-35</option>
+                                    <option value="36-45">36-45</option>
+                                    <option value="46-50">46-50</option>
+                                    <option value="51-55">51-55</option>
+                                    <option value="55+">55+</option>
+                                </select>
+                            </div>
+
+                            <!-- Occupation -->
+                            <div class="form-group" >
+                                <label>Occupation</label>
+                                <input id="Occupation" type="text" class="form-control" placeholder="Enter between 0-20">
+                            </div>
+
+                            <!-- Stay Years-->
+                            <div class="form-group">
+                                <label>Stay Years</label>
+                                <select multiple class="form-control"  id="Stay_In_Current_City_Years">
+                                    <option value=0>less than one year</option>
+                                    <option value=1>between one and two</option>
+                                    <option value=2>between two and three</option>
+                                    <option value=3>between three and four</option>
+                                    <option value="4+">four or more</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Product_ID</label>
+                                <input id="Product_ID" type="text" class="form-control" placeholder="between 0-3700">
+                            </div>
+                            <div class="form-group">
+                                <label>Product_Category_1</label>
+                                <input id="Category1" type="text" class="form-control" placeholder="between 1-18">
+                            </div>
+                            <div class="form-group">
+                                <label>Product_Category_2</label>
+                                <input id="Category2" type="text" class="form-control" placeholder="Optional between 2-18">
+                            </div>
+                            <div class="form-group">
+                                <label>Product_Category_3</label>
+                                <input id="Category3" type="text" class="form-control" placeholder="Optional between 3-18">
+                            </div>
+                            <div class="form-group">
+                                <label>Money you purchase</label>
+                                <input id="Money" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="box-footer">
+                            <button  class="btn btn-primary" onclick="sub()">Submit</button>
+                        </div>
+                        <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+                <!--/.col (right) -->
+            </div>
+            <div class="row" id="show">
+                <div class="col-lg-6 col-xs-6 col-lg-offset-3">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+                            <h3 id="Purchase">dasdasd</h3>
+                            <p id="Result">dadasda</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">
+                            More info <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <!-- /.content -->
+        </section>
+    </div>
+    <footer class="main-footer en">
+        <div class="pull-left hidden-xs">
+            Data form &nbsp
+        </div>
+        <strong>Black Friday <a href="https://www.kaggle.com/mehdidag/black-friday">Kaggle</a></strong>
+    </footer>
+    <footer class="main-footer fr">
+        <div class="pull-left hidden-xs">
+            Les données de &nbsp
+        </div>
+        <strong>Vendredi Noir<a href="https://www.kaggle.com/mehdidag/black-friday">Kaggle</a></strong>
+    </footer>
+    <footer class="main-footer zh">
+        <div class="pull-left hidden-xs">
+            数据来自 &nbsp
+        </div>
+        <strong>黑色星期五  <a href="https://www.kaggle.com/mehdidag/black-friday">Kaggle</a></strong>
+    </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<script src="../Library/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../Library/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../Library/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../Library/dist/js/adminlte.min.js"></script>
+<script src="../Library/dist/js/demo.js"></script>
+<script>
+    // 隐藏
+    document.getElementById("show").style.visibility="hidden";
+    var languagetype = !!navigator.languages?navigator.languages[0]:navigator.language;
+    var lang = languagetype.substr(0,2);
+    zh = document.getElementsByClassName("zh");
+    en = document.getElementsByClassName("en");
+    fr = document.getElementsByClassName("fr");
+    switch(lang){
+        case "zh":
+            while (en.length!==0) {
+                en[0].parentNode.removeChild(en[0]);
+            }
+            while (fr.length!==0) {
+                fr[0].parentNode.removeChild(fr[0]);
+            }
+            break;
+        case "fr":
+            while (zh.length!==0) {
+                zh[0].parentNode.removeChild(zh[0]);
+            }
+            while (en.length!==0) {
+                en[0].parentNode.removeChild(en[0]);
+            }
+            break;
+        case "en":
+            while (zh.length!==0) {
+                zh[0].parentNode.removeChild(zh[0]);
+            }
+            while (fr.length!==0) {
+                fr[0].parentNode.removeChild(fr[0]);
+            }
+            break;
+    }
+    function sub() {
+        document.getElementById("show").style.visibility="visible";
+        /* Age */
+        var AgeIndex = document.getElementById("Age").selectedIndex;
+        var Age = document.getElementById("Age").options[AgeIndex].value;
+        /* City */
+        var CityIndex = document.getElementById("City").selectedIndex;
+        var City = document.getElementById("City").options[CityIndex].value;
+        /* Occupation */
+        var Occupation = document.getElementById("Occupation").value;
+        /* Stay */
+        var Stay_In_Current_City_Years_Index = document.getElementById("Stay_In_Current_City_Years").selectedIndex;
+        var Stay_In_Current_City_Years = document.getElementById("Stay_In_Current_City_Years").options[Stay_In_Current_City_Years_Index].value;
+        /* Marital */
+        var Marital_Status_Index = document.getElementById("Marital_Status").selectedIndex;
+        var Marital_Status = document.getElementById("Marital_Status").options[Marital_Status_Index].value;
+        /* Product_ID */
+        var Product_ID = document.getElementById("Product_ID").value;
+
+        /* Category 1 */
+        var Product_Category_1 = document.getElementById("Category1").value;
+
+        /* Category 2 */
+        var Product_Category_2 = document.getElementById("Category2").value;
+
+        /* Category 3 */
+        var Product_Category_3 = document.getElementById("Category3").value;
+
+        /* Money */
+        var Money = document.getElementById("Money").value;
+
+        if(Product_Category_3==="") Product_Category_3 = 0;
+        if(Product_Category_2==="") Product_Category_2 = 0;
+        var data = {"User_ID": 0, "Product_ID":Product_ID,  "Age": Age, "Occupation": Occupation,
+            "City": City, "CityStay": Stay_In_Current_City_Years, "Marital_Status": Marital_Status,
+            "Category1":Product_Category_1, "Category2": Product_Category_2, "Category3": Product_Category_3,
+            "Money": Money};
+
+
+//
+//        console.log(Product_ID + " " + Product_Category_1 + " " + Product_Category_2 + " " + Product_Category_3 + " ")
+        $.ajax({
+            url: 'http://127.0.0.1:5000/RegressionPredict',
+            type: "post",
+            data: JSON.stringify(data),
+            contentType:'application/json; charset=UTF-8',
+            dataType: 'json',
+            success: function (result) {
+                var Gender  = result["result"];
+                document.getElementById("Purchase").innerHTML = Gender;
+                var response = "Hello, " + document.getElementById("Name").value + ", Based on your characteristics, we predict that you may be："
+                document.getElementById("Result").innerHTML = response;
+            },
+            error: function (e) {
+                alert("error");
+            }
+        });
+    }
+</script>
+</body>
+</html>
