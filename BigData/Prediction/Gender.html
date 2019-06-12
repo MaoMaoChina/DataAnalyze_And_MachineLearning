@@ -285,10 +285,6 @@
             "City_Category": City, "Stay_In_Current_City_Years": Stay_In_Current_City_Years, "Marital_Status": Marital_Status,
             "Product_Category_1":Product_Category_1, "Product_Category_2": Product_Category_2, "Product_Category_3": Product_Category_3,
             "Purchase": Purchase};
-
-
-//
-//        console.log(Product_ID + " " + Product_Category_1 + " " + Product_Category_2 + " " + Product_Category_3 + " ")
         $.ajax({
             url: 'http://127.0.0.1:5000/RegressionPredict',
             type: "post",
@@ -297,6 +293,7 @@
             dataType: 'json',
             success: function (result) {
                 var Gender  = result["result"];
+                Gender = Gender === 0 ? 'Female' : 'Male';
                 document.getElementById("Gender").innerHTML = Gender;
                 var response = "Hello, " + document.getElementById("Name").value + ", Based on your characteristics, we predict that you may be："
                 document.getElementById("Result").innerHTML = response;

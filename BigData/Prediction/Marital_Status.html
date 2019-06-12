@@ -295,6 +295,7 @@
             dataType: 'json',
             success: function (result) {
                 var Marital_Status  = result["result"];
+                Marital_Status = Marital_Status===0 ? 'Unmarried' : 'Married';
                 document.getElementById("Marital").innerHTML = Marital_Status;
                 var response = "Hello, " + document.getElementById("Name").value + ", Based on your characteristics, we predict that your spending on Black Friday will be："
                 document.getElementById("Result").innerHTML = response;
