@@ -154,7 +154,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Money you purchase</label>
-                                <input id="Money" type="text" class="form-control">
+                                <input id="Purchase" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="box-footer">
@@ -171,7 +171,7 @@
                     <!-- small box -->
                     <div class="small-box bg-aqua">
                         <div class="inner">
-                            <h3 id="Purchase">dasdasd</h3>
+                            <h3 id="Marital">dasdasd</h3>
                             <p id="Result">dadasda</p>
                         </div>
                         <div class="icon">
@@ -277,16 +277,15 @@
         var Product_Category_3 = document.getElementById("Category3").value;
 
         /* Money */
-        var Money = document.getElementById("Money").value;
+        var Purchase = document.getElementById("Purchase").value;
 
         if(Product_Category_3==="") Product_Category_3 = 0;
         if(Product_Category_2==="") Product_Category_2 = 0;
         var data = {"User_ID": 0, "Product_ID":Product_ID,  "Age": Age, "Occupation": Occupation,
             "City_Category": City, "Stay_In_Current_City_Years": Stay_In_Current_City_Years, "Gender": Gender,
-            "Product_Category_1":Product_Category_1, "Product_Category_2": Product_Category_2, "Product_Category_3": Product_Category_3};
+            "Product_Category_1":Product_Category_1, "Product_Category_2": Product_Category_2, "Product_Category_3": Product_Category_3
+        , "Purchase": Purchase};
 
-
-//
 //        console.log(Product_ID + " " + Product_Category_1 + " " + Product_Category_2 + " " + Product_Category_3 + " ")
         $.ajax({
             url: 'http://127.0.0.1:5000/RegressionPredict',
@@ -296,7 +295,7 @@
             dataType: 'json',
             success: function (result) {
                 var Marital_Status  = result["result"];
-                document.getElementById("Purchase").innerHTML = Marital_Status;
+                document.getElementById("Marital").innerHTML = Marital_Status;
                 var response = "Hello, " + document.getElementById("Name").value + ", Based on your characteristics, we predict that your spending on Black Friday will be："
                 document.getElementById("Result").innerHTML = response;
             },
